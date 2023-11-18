@@ -1,0 +1,250 @@
+@media screen and (max-width: 991px) {
+    .w-container {
+      max-width: 728px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+
+  
+    .w-row, .w-container .w-row {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+
+  }
+  
+  @media screen and (max-width: 479px) {
+    .w-container {
+      max-width: none;
+    }
+  }
+
+  
+  @media screen and (min-width: 1440px) {
+ 
+    .timeline {
+      z-index: -3;
+      background-color: var(--background-1);
+      position: relative;
+    }
+  
+    .timeline-container {
+      overflow: visible;
+    }
+  
+    .timeline-wrapper {
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+    }
+  
+    .timeline-item {
+      width: 100%;
+      max-width: 1280px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 160px 1fr;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 80px 0;
+    }
+  
+    .timeline-left {
+      text-align: right;
+    }
+  
+    .timeline-center {
+      justify-content: center;
+      display: flex;
+    }
+  
+    .timeline-right {
+      font-family: Poppins, sans-serif;
+      font-weight: 600;
+    }
+  
+    .timeline-date-text {
+      font-family: Poppins, sans-serif;
+      font-size: 48px;
+      line-height: 1.2;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 50vh;
+    }
+  
+    .timeline-circle {
+      width: 15px;
+      height: 15px;
+      background-color: #fff;
+      border-radius: 100%;
+      padding: 0;
+      font-size: 16px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 50vh;
+    }
+  
+    .timeline-text {
+      font-size: 20px;
+      line-height: 1.3;
+    }
+  
+    .timeline-progress {
+      z-index: -2;
+      width: 3px;
+      height: 100%;
+      background-color: #414141;
+      position: absolute;
+    }
+  
+    .timeline-progress-bar {
+      z-index: -1;
+      width: 3px;
+      height: 50vh;
+      background-color: var(--medium-orchid);
+      padding: 0;
+      position: fixed;
+      bottom: 50vh;
+    }
+
+    .bold-text-2 {
+      font-size: 19px;
+      font-weight: 400;
+    }
+  
+  }
+  
+  @media screen and (max-width: 991px) {
+ 
+    .container {
+      padding: 80px 50px 80px 60px;
+    }
+
+   .bold-text-2 {
+      font-weight: 400;
+    }
+  
+
+  }
+  
+
+  
+  @media screen and (max-width: 767px) {
+ 
+    .timeline {
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 37px;
+      padding-right: 37px;
+    }
+  
+    .timeline-item {
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      flex-direction: column;
+      grid-template-rows: 1fr 64px;
+      grid-template-columns: minmax(64px, 1fr);
+      grid-auto-columns: 1fr;
+      grid-auto-flow: row;
+      align-content: stretch;
+      justify-content: stretch;
+      justify-items: start;
+      padding: 80px 0 15px;
+      display: grid;
+    }
+  
+    .timeline-item.row-rmv {
+      grid-template-rows: 1fr;
+    }
+  
+    .timeline-center {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      display: flex;
+      position: absolute;
+      left: 10px;
+    }
+  
+    .timeline-right {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  
+    .timeline-date-text {
+      margin-bottom: 10px;
+      font-size: 36px;
+    }
+  
+    .timeline-text {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  
+    .timeline-progress {
+      left: 16px;
+    }
+
+    .bold-text-2 {
+      font-size: 15px;
+      font-weight: 400;
+    }
+  
+  }
+  
+
+  @media screen and (max-width: 479px) {
+
+    .container {
+      background-color: rgba(0, 0, 0, 0);
+      padding: 25px 10px 16px 11px;
+    }
+  
+    .container.no-vertical-padding {
+      padding-top: 2px;
+    }
+  
+    .container.timeline-rmv {
+      background-color: var(--background-1);
+    }
+  
+
+    .timeline {
+      padding-left: 28px;
+      padding-right: 15px;
+    }
+
+  
+    .timeline-item {
+      padding-top: 90px;
+      padding-bottom: 90px;
+    }
+
+    
+  
+    .timeline-item.row-rmv {
+      grid-template-rows: 1fr;
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  
+    .timeline-center {
+      left: 6px;
+    }
+  
+    .timeline-date-text {
+      font-size: 30px;
+    }
+  
+    .timeline-progress {
+      left: 11px;
+    }
+  
+    
+ 
+  }
+

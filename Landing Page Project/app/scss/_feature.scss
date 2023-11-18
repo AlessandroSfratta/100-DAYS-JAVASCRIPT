@@ -1,0 +1,47 @@
+.feature {
+
+&__intro {
+    margin-bottom: 3.75rem;
+ @include breackpoint-up(large) {
+    width: 60%;
+ }
+}
+    &__grid {
+
+        @include breackpoint-up(large) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &__item {
+        border: 1px solid magenta;
+        padding: 0.9375rem;
+        
+        @include breackpoint-up(medium) {
+            flex: 0 0 50%;
+        }
+
+        @include breackpoint-up(large) {
+            flex: 1;
+        }
+
+    }
+
+    &__icon {
+        margin-bottom: 1.875rem;
+        
+        @include breackpoint-up(large) {
+       margin-bottom: 2.75rem;
+     }
+    }
+
+    &__title {
+
+    }
+
+    &__description {
+
+    }
+}
